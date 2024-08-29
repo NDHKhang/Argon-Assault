@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3769802937395872752}
   - component: {fileID: 722949158378330351}
   - component: {fileID: 7142088599294340909}
+  - component: {fileID: -924163509460729249}
   m_Layer: 0
-  m_Name: Asteroid Lava Blue
-  m_TagString: Untagged
+  m_Name: Blue Meteorite
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525289512586222695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000021855694, y: -0.00000008742278, z: 1.9106855e-15, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8507826130761216034}
@@ -86,6 +87,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-924163509460729249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525289512586222695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923d65da7a87f6a49a25c4047f758881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathFX: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
+  HitVFX: {fileID: 3328340895454630440, guid: 4d7051062c934af4a86fec75c4cd4bfd, type: 3}
+  score: 20
+  hitPoint: 6
 --- !u!1 &5943626911675363887
 GameObject:
   m_ObjectHideFlags: 0
